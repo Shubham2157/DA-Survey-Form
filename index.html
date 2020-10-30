@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>DA: Data collection Survey Form</title>
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <script src="post.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1 id="title">Data Analysis Assingment Survey Form</h1>
+    <p id="description"><em>Thank you for taking the time to help us in collecting data for our Assingment</em></p>
+  </header>
+  <form id="survey-form" target="_self" onsubmit="return postToGoogle();" action="" autocomplete="off">
+    <div class="form-control">
+      <label id="name-label" for="name">Name <small>(required)</small></label>
+      <input id="name" type="text" name="entry.1181298464" placeholder="Enter your name" required>
+    </div>
+    <div class="form-control">
+      <label id="email-label" for="email">Email <small>(required)</small></label>
+      <input id="email" type="email" name="entry.1289061282" placeholder="Enter your email" required>
+    </div>
+    <div class="form-control">
+      <label id="number-label" for="number">Phone No <small>(required)</small></label>
+      <input id="number" type="number" name="entry.600078665" placeholder="Phone No" required min="1000000000" max="9999999999">
+    </div>
+
+    <div class="form-control">
+      <label for="dropdown">Which option best describes your current role?</label>
+      <select id="role" name="entry.5537704"  required>
+        <option value disabled selected>Select current role</option>
+        <option value="Student">Student</option>
+        <option value="Parent">Parent</option>
+        <option value="Teacher">Teacher</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+    
+    <div class="form-control">
+      <label for="dropdown">1. Students may be asked to spend more time on questions dealing with? </label>
+      <select id="que1" name="entry.1939816635"  required>
+        <option value disabled selected>Select your choice</option>
+        <option value="Remembering">Remembering</option>
+        <option value="Understanding">Understanding</option>
+        <option value="Creating">Creating</option>
+        <option value="Analysing">Analysing</option>
+      </select>
+    </div>
+
+    <div class="form-control">
+      <label for="dropdown">2. Best Method to teach children with special needs?</label>
+      <select id="que2" name="entry.819260042"  required>
+        <option value disabled selected>Select your choice</option>
+        <option value="Cooperative learning & peer tutoring">Cooperative learning & peer tutoring</option>
+        <option value="Ability grouping for teaching">Ability grouping for teaching</option>
+        <option value="Discussion in the classroom involving less nof of students">Discussion in the classroom involving less nof of students</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+
+    <div class="form-control">
+      <label for="dropdown">3. Do you think students get enough time to introspection while having schools and coaching both?</label>
+      <select id="que3" name="entry.539887030"  required>
+        <option value disabled selected>Select your choice</option>
+        <option value="Strongly Agree">Strongly Agree</option>
+        <option value="Agree">Agree</option>
+        <option value="Neutral">Neutral</option>
+        <option value="Disagree">Disagree</option>
+        <option value="Strongly Disagree">Strongly Disagree</option>
+      </select>
+    </div>
+
+    <div class="form-control">
+      <label for="dropdown">4. How many hours of online classes do you think are necessary keeping in mind their mental & physical health?</label>
+      <select id="que4" name="entry.8002618"  required>
+        <option value disabled selected>Select your choice</option>
+        <option value="Less then 3 hrs">Less then 3 hrs</option>
+        <option value="3-4 hrs">3-4 hrs</option>
+        <option value="4-5 hrs">4-5 hrs</option>
+        <option value="More than 5 hrs">More than 5 hrs</option>
+      </select>
+    </div>
+
+    <div class="form-control">
+      <label for="dropdown">5. Do you find Pictionary learning more preferable than Conceptual Attainment?</label>
+      <select id="que5" name="entry.1188242642"  required>
+        <option value disabled selected>Select your choice</option>
+        <option value="Strongly Agree">Strongly Agree</option>
+        <option value="Agree">Agree</option>
+        <option value="Neutral">Neutral</option>
+        <option value="Disagree">Disagree</option>
+        <option value="Strongly Disagree">Strongly Disagree</option>
+      </select>
+    </div>
+
+    <div class="form-control">
+      <label for="dropdown">6. Do you think that the syllabus should be modified in order to make the education more advance?</label>
+      <select id="que6" name="entry.539997619"  required>
+        <option value disabled selected>Select your choice</option>
+        <option value="Strongly Agree">Strongly Agree</option>
+        <option value="Agree">Agree</option>
+        <option value="Neutral">Neutral</option>
+        <option value="Disagree">Disagree</option>
+        <option value="Strongly Disagree">Strongly Disagree</option>
+      </select>
+    </div>
+
+    <div class="form-control">
+      <label for="dropdown">7. In this present Situation do you prefer Blackboard learning or have a Running Dictation?</label>
+      <select id="que7" name="entry.1927309329"  required>
+        <option value disabled selected>Select your choice</option>
+        <option value="Blackboard learning">Blackboard learning</option>
+        <option value="Running Dictation">Running Dictation</option>
+      </select>
+    </div>
+
+    <div class="form-control">
+      <label for="dropdown">8. For the proper development of a child at adolescent state parents and teachers can do?</label>
+      <select id="que8" name="entry.1509251524"  required>
+        <option value disabled selected>Select your choice</option>
+        <option value="Rendering Proper gender education">Rendering Proper gender education</option>
+        <option value="providing suitable environment">providing suitable environment</option>
+        <option value="Arranging guidance & counselling services(if required)">Arranging guidance & counselling services(if required)</option>
+        <option value="All of the above">All of the above</option>
+      </select>
+    </div>
+
+    <div class="form-control">
+      <label for="dropdown">9. To develop creativity in a child, the teacher should respect the views of the child and lead the child to novel thinking?</label>
+      <select id="que9" name="entry.485494371"  required>
+        <option value disabled selected>Select your choice</option>
+        <option value="Strongly Agree">Strongly Agree</option>
+        <option value="Agree">Agree</option>
+        <option value="Neutral">Neutral</option>
+        <option value="Disagree">Disagree</option>
+        <option value="Strongly Disagree">Strongly Disagree</option>
+      </select>
+    </div>
+
+    <div class="form-control">
+      <label for="dropdown">10. The ultimate objective of teaching is to make students thinking learners?</label>
+      <select id="que10" name="entry.945185264"  required>
+        <option value disabled selected>Select your choice</option>
+        <option value="Strongly Agree">Strongly Agree</option>
+        <option value="Agree">Agree</option>
+        <option value="Neutral">Neutral</option>
+        <option value="Disagree">Disagree</option>
+        <option value="Strongly Disagree">Strongly Disagree</option>
+      </select>
+    </div>
+
+    <button id="success-btn" type="submit" style="display: none;" disabled>Submitting...</button>
+    <button id="submit-btn" style="display: block;" type="submit">Submit</button>
+    
+
+  </form>
+
+  <h3 id="success-msg" style="text-align: center !important; margin-top:190px !important; display:none; color:#fff"> Thank you, We have got your response <br>Our Team : 
+    <br>1. Ankur Dubay <br>2. Shubham Kumar Jha <br>3. Snehanko Bose <br>4. Vinayak Agnihotri <br>5. Vivek Singh <br><br>This form is managed by our team</h3>
+
+</body>
+
+</html>
