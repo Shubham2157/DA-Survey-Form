@@ -8,7 +8,7 @@ app.use(express.static(path.join(__dirname)));
 //   res.console("Hello world");
 // })
 
-app.get('/survey',  (req, res) => {
+app.get('/',  (req, res) => {
     res.sendFile(path.join(__dirname+'/index.html'));
   });
 
